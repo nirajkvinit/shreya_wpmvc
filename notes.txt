@@ -10,4 +10,5 @@
 * Try to implement Eloquent ORM so that multiple database can be used with the same website.
 * Custom Theme Structure (Provide some sample themes)
 * Multiple Theme Type (Either use Website's Theme or use a custom theme totally seperated from the website)
+* Integrate package for virtual pages
 
