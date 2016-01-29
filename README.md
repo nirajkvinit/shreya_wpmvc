@@ -1,2 +1,3 @@
 # shreya-wpmvc
-Another Wordpress MVC
+Object Oriented, Laravel inspired MVC Framework for Wordpress.
+
