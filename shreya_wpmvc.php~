@@ -8,7 +8,7 @@
  * 
  * @wordpress-plugin
  * Plugin Name:       Shreya WPMVC
- * Plugin URI:        https://github.com/nirajkvinit/shreya_wpmvc
+ * Plugin URI:        https://github.com/nirajkvinit/shreya-wpmvc
  * Description:       OOPs MVC framework for Wordpress with custom Routing, Models, Views and Controllers 
  * Version:           0.0.1
  * Author:            Niraj Kumar
