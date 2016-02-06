@@ -1,14 +1,1 @@
-* Use Composer to load dependencies
-* Create Artisan like CLI to create models/controller
-* Use Bower/npm for CSS & JS
-* composer, Bower, Gulp, Grunt, or NPM
-* Create DB Migrations
-* Use Namespace and Namespace based Autoloading
-* Try Slim Framework or Laravel Micro Framework Lumen
-* Try to implement blade templating engine
-* Try to create RESTful API Structure
-* Try to implement Eloquent ORM so that multiple database can be used with the same website.
-* Custom Theme Structure (Provide some sample themes)
-* Multiple Theme Type (Either use Website's Theme or use a custom theme totally seperated from the website)
-* Integrate package for virtual pages
-
+# Notes Coming soon...

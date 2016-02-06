@@ -1,2 +1,5 @@
 # shreya-wpmvc
-Another Wordpress MVC
+Shreya WordPress MVC with custom Routing, Models, Views and Controllers
+
+#Usage Instructions
+Coming right up...
