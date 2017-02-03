@@ -83,3 +83,4 @@ local.properties
 
 ###############################SWPMVC Specific
 bower_components/
+vendor/

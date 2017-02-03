@@ -21,6 +21,16 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+//////////////////////////////////////Constants Section Starts//////////////////////////////
+/**
+ * SWPMVC Plugin Directory Path Constant
+ */
+define( "SWPMVC_PLUGIN_DIR", plugin_dir_path( __FILE__ ) );
+
+/**
+ * Bower Components Dir Constant
+ */
+define( "BOWER_ROOT_DIR", SWPMVC_PLUGIN_DIR . 'bower_components' );
 
 /**
  * SWPMVC Plugin URL Constant
@@ -33,18 +43,44 @@ define( "SWPMVC_PLUGIN_URL", plugins_url()."/shreya_wpmvc" );
 define( "SWPMVC_ASSETS_URL", SWPMVC_PLUGIN_URL.'/assets' );
 
 /**
- * SWPMVC Plugin Directory Path Constant
+ * Bower Components Dir URL Constant
  */
-define( "SWPMVC_PLUGIN_DIR", plugin_dir_path( __FILE__ ) );
+define( "BOWER_ROOT_URL", SWPMVC_PLUGIN_URL . '/bower_components' );
 
+//////////////////////////////////////Constants Section Ends//////////////////////////////
+
+include_once( SWPMVC_PLUGIN_DIR . 'includes/includes.php' );
 
 /**
- * SWPMVC Application Endpoint (It can be modified)
- * Application would load as www.example.com/apps/...
- * 
- * @todo Load this from wordpress options (Create a Plugin Settings Page in Wordpress Control Panel) 
- * This plugin settings page will store the application configurations from wordpress options table.
- * Store everything in json. Also provide another option to save configurations in a XML configuration file.
- * Try the logger function.
+ * Set Default Timezone to website's default Timezone for better date/time calculations.
  */
-define("SWPMVC_APPS_URL", '/swpmvc');
+date_default_timezone_set( swpmvc_get_wordpress_timezone_string() );
+
+/**
+ * Search and Load PHP Files automatically based on classes name
+ */
+spl_autoload_register( 'swpmvc_autoload_classes' );
+
+
+/*****************************************************************************
+ *****************************************************************************
+ *                    Website Virtual Pages creator (Routes)
+ *****************************************************************************
+ *****************************************************************************/
+/**
+ * Application Endpoints (It can be modified)
+ * Application would load as www.example.com/apps/...
+ */
+define( "SWPMVC_ENDPOINT_URL", '/' );
+
+/**
+ * Create Application's Routes
+ */
+$swpmvc_router = new SwpmvcRouter();
+unset( $swpmvc_router ); //Clear garbage if any
+
+/**
+ * Create Ajax Handler for The Application
+ * @todo elaborate and implement this properly
+ */
+$swpmvc_ajax_handler = new ControllerSwpmvcAjax();
