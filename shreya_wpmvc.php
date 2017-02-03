@@ -3,7 +3,7 @@
  * Shreya WP MVC (MVC Framework for Wordpress)
  * This plugin file is the entrypoint to Shreya Wordpress MVC Framework
  * @link 		https://github.com/nirajkvinit/shreya_wpmvc
- * @since 		0.0.1
+ * @since 		0.0.2
  * @package 	shreya_wpmvc
  * 
  * @wordpress-plugin
