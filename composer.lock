@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87d1839d3dfe8ef80959777e6561afc5",
+    "content-hash": "4b16d5a079c2666f742695a57e84a5ff",
     "packages": [
+        {
+            "name": "brandonwamboldt/wp-orm",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brandonwamboldt/wp-orm.git",
+                "reference": "453c5bb08791b32c40833314714fd78383ff384f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brandonwamboldt/wp-orm/zipball/453c5bb08791b32c40833314714fd78383ff384f",
+                "reference": "453c5bb08791b32c40833314714fd78383ff384f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WordPress\\ORM\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Wamboldt",
+                    "email": "brandon.wamboldt@gmail.com"
+                }
+            ],
+            "description": "WordPress ORM",
+            "time": "2014-09-09T18:22:36+00:00"
+        },
         {
             "name": "twig/twig",
             "version": "v1.31.0",
